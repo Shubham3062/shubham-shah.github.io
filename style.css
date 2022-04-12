@@ -1,0 +1,552 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.header{
+    background-color: #f3f3f3;
+    height: 100vh;
+    width: 100%;
+}
+.logo{
+    width:150px;
+    padding-top: 15px;
+    padding-left: 10px;
+    display:block;
+    position:absolute;
+}
+.nav-links{
+    list-style: none;
+    position: relative;
+    padding-top: 200px;
+}
+.nav-links li{
+    padding:18px 0;
+}
+.nav-links li a{
+    color:#262626;
+    text-decoration: none;
+    padding: 15px;
+    margin-left: 54px;
+    font-size: 18px;
+    transition: 0.2s linear;
+}
+.name{
+    color:#262626;
+    font-family: 'Roboto Mono', monospace;
+}
+.name li{
+    padding: 30px;
+}
+.name li p{
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 3.6px;
+    transform:rotate(-90deg) translate(-100%);
+    transform-origin:left;
+    position:absolute;
+    margin-top: 20px;
+    left: 6.3%;
+} 
+.nav-links li a:hover{
+    color: #0359a0;
+    box-shadow:  0 0 18px 1px rgba(4, 181, 187, 0.5);
+}
+.name li p:hover{
+    color:#0359a0;
+}
+.text-box{
+    margin-top: -300px;
+    margin-left: 190px;
+    letter-spacing:1px;
+    line-height:-20px;
+    color: #000;
+}
+.text-box h4{
+    margin-left: 400px;
+    font-family: 'Roboto Mono', monospace;
+    font-size:46px;
+    font-weight: 500;
+}
+.text-box h1{
+    font-size:90px;
+    margin-left:70px;
+    line-height:-150;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    background: url(images/back\(light\).png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 18s linear infinite;
+    font-family: 'poppins',sans-serif;
+    font-weight: 700;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+.auto-input{
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    margin-left: 245px;
+}
+.icons{
+    margin-top: 45px;
+    margin-left:-180px;
+    cursor:pointer;
+    text-align: center;
+}
+.icons a{
+    color:black;
+    margin: 10px;
+    font-size:27px;
+    text-decoration: none; 
+}
+.icons a:hover{
+    color:rgb(221, 61, 61);
+}
+html{
+    scroll-behavior: smooth;
+}
+a#scrolldown{
+    position:absolute;
+    height:45px;
+    width:27px;
+    border:3px solid #262626;
+    margin: auto;
+    left:0;
+    right:0;
+    bottom:50px;
+    border-radius:20px;
+}
+a#scrolldown:before{
+    position:absolute;
+    content:"";
+    margin:auto;
+    left:0;
+    right:0;
+    height:6px;
+    width:6px;
+    background-color: #262626;
+    border-radius: 50%;
+    top: 4px;
+    animation:move-down 2s infinite;
+}
+@keyframes move-down{
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity:0;
+        transform: translateY(25px);
+    }
+}
+/* -------------------------work section----------------------- */
+.case h1{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+    font-size: 40px;
+    font-weight:600;
+}
+.coffee{
+    width:300px;
+    margin-top:70px;
+    margin-left:100px;
+    border-radius:23px;
+    box-shadow:1px 10px 15px  #262626;
+}
+.case h4{
+    margin-top:-270px;
+    margin-left:450px;
+    font-family: 'poppins',sans-serif;
+    font-size:24px;
+    font-weight:400;
+}
+.case h5{
+    margin-top:5px;
+    margin-left:450px;
+    font-family: 'poppins',sans-serif;
+    font-size:18px;
+    font-weight:400;
+    color:#888686;
+}
+.break{
+    width: 120px;
+    border: 2px solid #262626;
+}
+.case p{
+    margin-top: 15px;
+    margin-left:450px;
+    font-family: 'poppins',sans-serif;
+    font-size:15px;
+    font-weight:400;
+    justify-content:center;
+    padding-right: 230px;
+}
+.coffee-btn a{
+    margin-left:450px;
+    margin-top:30px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 0px 15px 0px 15px;
+    border: 3px solid #262626;
+    color:#262626;
+    font-size: 15px;
+    font-family: 'poppins',sans-serif;
+    font-weight:700;
+    padding:5px 22px;
+    display:inline-block;
+    transition: 0.3s;
+    background-color: #ffffff;
+}
+.coffee-btn a:hover{
+   background-color: #262626;
+   color:#ffffff;
+}
+/* -----------------------about me------------------- */
+.aboutme h1{
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+    font-size: 40px;
+    font-weight:600;
+}
+.aboutme p{
+    margin-top:15px;
+    justify-content: center;
+    text-align:center;
+    padding-left:250px;
+    padding-right:250px;
+    font-family: 'poppins',sans-serif;
+    font-size:15px;
+    font-weight:400;
+    
+}
+.profileimg{
+    width:180px;
+    margin-top:30px;
+    margin-left:540px;
+}
+.contact-btn{
+    list-style-type: none;
+    position: relative;
+    padding-top: 30px;
+    margin-left: 530px;
+    cursor:pointer;
+}
+.contact-btn .fa-solid{
+    margin-left:-9px;
+    text-align: center;
+}
+.contact-btn li a{
+    color:#262626;
+    text-decoration: none;
+    font-size:16px;
+    font-family: 'poppins',sans-serif;
+    font-weight:600;
+    box-sizing: border-box;
+    border-radius: 20px 20px 20px 20px;
+    border: 3px solid #262626;
+    padding:5px 25px;
+    display:inline-block;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: 0.1s;
+}
+.contact-btn .fa-solid:hover,.contact-btn li a:hover{
+    background-color: #262626;
+    color:#ffffff;
+}
+/* -------------------contact page css---------------------- */
+.contact-class{
+    background-color: #55ffe5;
+    font-size:14px;
+    font-family: 'poppins',sans-serif;
+}
+.container{
+    width:80%;
+    margin:30px auto;
+}
+.contact-box{
+    background:#fff;
+    display:flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding:40px 60px;
+}
+.contact-right{
+    flex-basis:40%;
+    padding:40px;
+    background: #1c00b5;
+    color:#fff;
+}
+h1{
+    margin-bottom:3px;
+}
+.container p{
+    margin-bottom: 20px;
+}
+.input-row{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-grp{
+    margin-top:20px;
+}
+.input-row .input-grp{
+  flex-basis: 45%;
+}
+input{
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc;
+    outline:none;
+    padding-bottom: 5px;
+}
+textarea{
+    width:100%;
+    border:1px solid #ccc;
+    outline:none;
+    padding:10px;
+    box-sizing:border-box;
+}
+label{
+    margin-bottom:6px;
+    display:block;
+    color:#1c00b5;
+    font-weight:500;
+}
+button{
+    background: #1c00b5;
+    width:100px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    color:#fff;
+    height:35px;
+    border-radius: 30px;
+    margin-top:20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+.contact-left h3{
+    color:#1c00b5;
+}
+tr td:first-child{
+    padding-right:20px;
+    display:flex;
+}
+tr td{
+    padding-top:20px;
+}
+tr td .fa-brands{
+    font-size:30px;
+    color:#fff;
+    margin-left:30px;
+}
+tr td .fa-instagram{
+    font-size:30px;
+    color:#fff;
+}
+tr td .fa-linkedin{
+    font-size:29px;
+    color:#fff;
+    margin-left:-165px;
+}
+.icons-contact{
+    display:none;
+}
+.copyright p{
+    font-size:15px;
+    font-weight:400;
+    font-family: 'Roboto Mono', monospace;
+    color:#262626;
+    margin-left:530px;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+.fa-copyright
+{
+    font-size:13px;
+}
+.copyright-contact{
+    display:none;
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px)
+{
+    .logo{
+        width:120px;
+        margin-top: 20px;
+        margin-left: -16px;
+    }
+    .text-box h4{
+        margin-left: 140px;
+        margin-top: -100px;
+        font-size:36px;
+        font-weight: 400;
+    }
+    .text-box{
+        margin-top: -180px;
+        margin-left: 30px;
+    }
+    .text-box h1{
+        font-size:54px;
+        line-height:-50;
+        margin-left: 30px;  
+    }
+    .shah-name{
+        margin-left: 63px;
+    }
+   .auto-input{
+       margin-left:30px;
+       font-size: 27px;
+   }
+   .nav-links li a{
+       display:none;
+   }
+   .name li p{
+       display:none;
+   }
+   .icons{
+       margin-left: -20px;
+   }
+   /* -------------- About me------------------ */
+   .profileimg{
+       width: 150px;
+       margin-left:130px;
+   }
+   .aboutme p{
+       font-size:12px;
+       justify-content:center;
+       text-align:center;
+       padding-left:45px;
+       padding-right:45px;
+   } 
+   /* ----------------------Work section---------------- */
+   .coffee{
+       width: 270px;
+       margin-left:70px;
+   }
+   .break{
+       display:none;
+   }
+   .case h4{
+      margin-left:30px;
+      margin-top:25px;  
+   }
+   .case h5{
+       margin-left:30px;
+   }
+   .case p{
+       margin-left:20px;
+       box-sizing: border-box;
+       padding-left:25px;
+       padding-right:40px;
+       margin-top:15px;
+   }
+   .coffee-btn a{
+       margin-left:130px;
+       margin-top:18px;
+   }
+   .coffee-btn a:hover{
+       background-color: #ffffff;
+       color: #262626;
+   }
+   .contact-btn{
+       margin-left:110px;
+   }
+   .contact-btn .fa-solid:hover,.contact-btn li a:hover{
+    background-color: #ffffff;
+    color:#262626;
+   }
+   /* ------------------contact details------------------- */
+   .container h1{
+       margin-left:-3px;
+       margin-top:90px;
+       font-size:27px;
+   }
+   .container p{
+    font-size:15px;
+    text-align:center;
+    margin-left:-30px;
+    margin-right:40px;
+    padding-right:30px;
+   }
+   .contact-box{
+       flex-direction: column;
+       width:80%;
+       margin-left:-15px;
+       margin-top:20px;
+   }
+   .contact-left{
+       padding:9px;
+       flex:60%;
+   }
+   .contact-right{
+       flex:40%;
+       display:none;
+   }
+   .contact-left h3{
+     margin-left:20px;
+     font-size:20px;
+   }
+   .input-grp{
+       margin-top:20px;
+   }
+   button{
+       margin-left:72px;
+       margin-top:9px;
+   }
+   label{
+      margin-bottom:8px;
+      font-size:16px;
+   }
+   .input-row{
+       margin-bottom:15px;
+   }
+   .icons-contact{
+       display:flex;
+       text-decoration: none;
+       margin-left:70px;
+       margin-top:-20px;
+       font-size:27px;
+       letter-spacing:25px;
+   }
+   .icons-contact a{
+       color:#1c00b5;
+   }
+   .copyright-contact{
+       display:flex;
+       color:#262626;
+       margin-left:75px;
+       font-size:13px;
+       margin-top:10px;
+       margin-bottom:0;
+   }
+   .copyright p{
+       margin-left:110px;
+   }
+  
+   
+}
+
+
